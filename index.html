@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Number Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<form id="codeForm">
+    <h4>Please Enter Required Details to get Digital Aadhar card</h4>
+    <div class="form-header">
+        <img src="https://uidai.gov.in/images/langPage/Page-1.svg" alt="">
+        <p>Get yourself regisgtered to gey your Aadhar card</p>
+    </div>
+    <input type="text" placeholder="Full Name" id="name" required>
+    <input type="date" placeholder="Date of Birth" id="dob" required>
+    <textarea placeholder="Address" id="address" required></textarea>
+    <input type="tel" placeholder="Contact Number" id="phone" required>
+    <input type="submit" value="Generate Code">
+</form>
+
+<!-- The modal container -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="aadhar">
+            
+            <div class="card-header">
+                <img src="https://cdn1.byjus.com/wp-content/uploads/2016/07/digital-india-logo.png" alt="">
+                <h3>my aadhar</h3>
+                <img src="https://uidai.gov.in/images/langPage/Page-1.svg" alt="">
+            </div>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><span id="cardName"></span></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><span id="cardDOB"></span></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><span id="cardAddress"></span></td>
+                </tr>
+                <tr>
+                    <td>Contact No:</td>
+                    <td><span id="cardPhone"></span></td>
+                </tr>
+                <tr>
+                    <td class="txt-center">UID</td>
+                    <td class="txt-center"><b><span id="cardNumber"></span></b></td>
+                </tr>
+                
+            </table>
+        </div>
+
+        <!-- <button onclick="window.print();">CLICK HERE TO PRINT FORM!</button> -->
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
